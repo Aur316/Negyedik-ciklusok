@@ -2,7 +2,7 @@
 
 /////////////////// FOR CIKLUS
 
-// szamok 1-tol 10-ig
+//szamok 1-tol 10-ig
 // let i
 // for (i=1; i<=10; i++)
 // {
@@ -63,10 +63,10 @@
 //  Azok a kétjegyű számok, amelyek számjegyeinek összege 10:
 
 // let i;
-// let a= Math.floor(i/10)
-// let b = i%10;
-// let c = a+b;
-// const t=10;
+// // let a= Math.floor(i/10)
+// // let b = i%10;
+// // let c = a+b;
+// // const t=10;
 
 // // console.log("Ez a szam:",i)
 // // console.log("Ez az elso szamjegy:",a)
@@ -80,11 +80,11 @@
 //     let c = a+b;
 //     const t =10;
 
-// // console.log("Ez a szam:",i)
-// // console.log("Ez az elso szamjegy:",a)
-// // console.log("Ez a masodik szamjegy:", b)
-// // console.log("Ez a ket szamjegy osszege:",c)
-// // console.log("------------")
+// // // console.log("Ez a szam:",i)
+// // // console.log("Ez az elso szamjegy:",a)
+// // // console.log("Ez a masodik szamjegy:", b)
+// // // console.log("Ez a ket szamjegy osszege:",c)
+// // // console.log("------------")
   
 //     if (c===t)
 //     {
@@ -113,7 +113,7 @@
 // let i;
 // const b=8;
 
-// for(i=1; i<=b; i++)
+// for(i=1; i<=20; i++)
 // {
 //     let c=i*b;
 //     console.log(i,"*",b,"=",c)
@@ -176,7 +176,7 @@
 
 // for (i=1; i<100; i++)
 // {
-//    for (b=1; b<100; b++)
+//    for (b=1; b<10; b++)
 //    {
 //     i=i+b;
 //     console.log(i)
@@ -215,53 +215,42 @@
 
 //  Időpontok 20 percenként, délelőtt:
 
-let i;
-let b;
+// let i;
+// let b;
 
-for (i=8; i<=12; i++)
-{
-    for (b=0; b<=59; b++)
-    {
-        if (b%20!=0)
-        {
+// for (i=8; i<=12; i++)
+// {
+//     for (b=0; b<=59; b++)
+//     {
+//         if (b%20!=0)
+//         {
            
-        } else 
-        {   if (b==0)
-            {
-                b="00"
-            }
-            //console.log(i,":",b);
-        }
+//         } else 
+//         {   if (b==0)
+//             {
+//                 b="00"
+//             }
+//             console.log(i,":",b);
+//         }
         
-    }
-}
+//     }
+// }
 
-// Napi menetrend, 50 percenként induló járatokkal:
+// // Napi menetrend, 50 percenként induló járatokkal:
 
 
-//let i;
-//let b;
+// //let i;
+// //let b;
 
-for (i=8; i<=10; i++)
-{
-    for (b=0; b<=59; b=b++)
-    {
-        if (b>=50)
-        {
-           // console.log(i, ":",b) 
-            i=i+1           
-        }
+// for (i=8; i<=10; i++)
+// {
+//     for (b=0; b<=59; b=b++)
+//     {
+//         if (b>=50)
+//         {
+//            // console.log(i, ":",b) 
+//             i=i+1           
+//         }
         
-    }
-}
-
-//Lottószelvény:
-
-//let i;
-let y =[];
-let x= [];
-
-for(i=1;i<=90;i++)
-{
-    console.log(x[i])
-}
+//     }
+// }
