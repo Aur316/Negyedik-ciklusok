@@ -8,7 +8,7 @@
 // osszead ("harom",4)
 
 // const paros = function (a,b)
-// {   
+// {
 //     console.log("Paros szamok ",a,"-tol",b,"-ig:")
 //     for (i=a; i<=b; i++)
 //      {
@@ -18,23 +18,19 @@
 //         } else {
 //             console.log(i)
 //         }
-//         } 
+//         }
 //     }
 // }
 
 // paros(-50,10)
 
-
-
-
-
 // const list1 = function (a,b)
-// {   
+// {
 //      let list1=[]
 //     // console.log("Az elso lista elemei",a,"-tol",b,"-ig")
 
 // for (a; a<=b; a++)
-// {   
+// {
 //     list1=[ ,a];
 // }
 //    // console.log(list1);
@@ -43,13 +39,11 @@
 
 // const proba1 = list1(0,10)
 
-
-
 // const list2 = function (a,b)
-// {   
+// {
 //     //console.log("A masodik lista elemei",a,"-tol",b,"-ig")
 //     let list2 = []
-//     while (a<=b)   
+//     while (a<=b)
 //         {
 //             list2 = [...list2,a]
 //             a++
@@ -67,18 +61,17 @@
 //     return list;
 // }
 
-
 // const x =conc(proba1, proba2)
 
 // console.log(x);
 
-// let terulet = function (a,b) 
+// let terulet = function (a,b)
 // {
 //     //let meret = a*b
 //     console.log("Terulet = ", a*b)
 //     return a*b
 // }
- 
+
 // let terulet2 = function (r)
 // {
 //     let meret2 = 3.14*r**2;
@@ -97,66 +90,126 @@
 
 // osszead (terulet(10,10), terulet2(5))
 
-let paros = function (a,b) {
+// let paros = function (a,b) {
 
-    let list = [];
-    for (a; a<=b; a++) {
+//     let list = [];
+//     for (a; a<=b; a++) {
 
-        if (a%2==0) {
-       // console.log("A ciklusban a parosszam: ",a);
-        list = [...list,a]
-        }
-    }
-    //console.log("A listaban a parosszam ", list)
-    return list;
+//         if (a%2==0) {
+//        // console.log("A ciklusban a parosszam: ",a);
+//         list = [...list,a]
+//         }
+//     }
+//     //console.log("A listaban a parosszam ", list)
+//     return list;
+// }
+
+// //paros (0,12)
+
+// let paratlan = function (x,y) {
+
+//     let list2 = []
+
+//     while (x<=y) {
+
+//         if (x%2!=0) {
+
+//            // console.log("A ciklusban a paratlan szam: ", x)
+//             list2 = [...list2,x]
+//         }
+//         x++;
+//     }
+//     //console.log("A listaban a paratlan szam: ", list2)
+//     return list2;
+// }
+
+// //paratlan (0,10)
+
+// let all = function (a,b) {
+
+//         let list3 = [...a,...b]
+//         //console.log ("A ket lista együtt: ", list3)
+//         return list3
+
+// }
+
+// //console.log(all (paros(1,6),paratlan(3,9)))
+
+// let listall = [all (paros(1,6),paratlan(3,9))]
+
+// // listall.forEach((a,b,c) => {
+
+// //     console.log(c)
+
+// // });
+
+// console.log("...............")
+
+// let people = ["Bela","Janos","maci", "Karoly","Laci"]
+
+// people.forEach((a,b,c)=>{
+//    // console.log("A lista elemei: ",a)
+//    // console.log ("A lista indexei: ",b)
+//    console.log("",c)
+// })
+
+// // ------------------------------
+let a = {};
+
+let b = [
+  {
+    nev: "Mari",
+    kor: 25,
+  },
+
+  {
+    nev: "Attila",
+    kor: 33,
+  },
+];
+
+let c = [
+  {
+    nev: "Karcsi",
+    kor: 44,
+  },
+
+  {
+    nev: "Reni",
+    kor: 33,
+  },
+];
+
+function aranykartya(objektum, lista) {
+  for (let i = 0; i < lista.length; i++) {
+    objektum[lista[i].nev] = lista[i].kor; //!!!!!
+  }
+
+  return objektum;
 }
 
-//paros (0,12)
+console.log("funkcio aranykartya: ", aranykartya(a, b));
 
-let paratlan = function (x,y) {
+// //------------------------------------------
 
-    let list2 = []
+// let nevek1 = "Jozsi"
+// let nevek2 = "csillag"
+// let nevek3 = "Bogyo"
+// let nevek4 = "kaco"
 
-    while (x<=y) {
+// function baratok (a,b,c,d) {
 
-        if (x%2!=0) {
+//     let list = [a,b,c,d]
+//     return list
+// }
 
-           // console.log("A ciklusban a paratlan szam: ", x)
-            list2 = [...list2,x]
-        }
-        x++;
-    }
-    //console.log("A listaban a paratlan szam: ", list2)
-    return list2;
-}
+// console.log("ők baratok",baratok(nevek1,nevek2,nevek3,nevek4))
 
-//paratlan (0,10)
+let objektum = {
+  nev: "John",
+};
 
-let all = function (a,b) {
+const x = "nev";
 
-        let list3 = [...a,...b]
-        //console.log ("A ket lista együtt: ", list3)
-        return list3
-
-}
-
-//console.log(all (paros(1,6),paratlan(3,9)))
-
-
-let listall = [all (paros(1,6),paratlan(3,9))]
-
-// listall.forEach((a,b,c) => {
-
-//     console.log(c)
-    
-// });
-
-console.log("...............")
-
-let people = ["Bela","Janos","maci", "Karoly","Laci"]
-
-people.forEach((a,b,c)=>{
-   // console.log("A lista elemei: ",a)
-   // console.log ("A lista indexei: ",b)
-   console.log("",c)
-})
+console.log("objektum.nev ", objektum.nev);
+console.log("objektum[nev] ", objektum[x]);
